@@ -47,7 +47,7 @@ function App() {
       
      const filterED = data.filter((el)=> el.title.length < number)
      setFilter(filterED)
-    //  console.log(filterED)
+   
       
       
     })
@@ -84,7 +84,7 @@ function App() {
     <input type="number" onChange={(event) => setNumber(event.target.value)}/>
     <button onClick={()=>fetchData()}>Search</button>
     <button onClick={()=> filterF()}>SearchFilter</button>
-    {/* {console.log(data)} */}
+    
     </div>
 
 
@@ -94,7 +94,6 @@ function App() {
       <div>
 
       {filterData.map((el,index)=>{
-        {console.log(filterData[index].title.length, 'sdfsfs')}
         if (filterData[index].title.length < 20 ){
           return(
             <div key={index}>
@@ -113,7 +112,7 @@ function App() {
       <div>
 
       {filterData.map((el,index)=>{
-        {console.log(filterData[index].title.length, 'sdfsfs')}
+        
         if (filterData[index].title.length > 20 && filterData[index].title.length < 50){
           return(
             <div key={index}>
@@ -130,7 +129,7 @@ function App() {
       <p>lengs : 100</p>
       <div>
       {filterData.map((el,index)=>{
-        {console.log(filterData[index].title.length, 'sdfsfs')}
+       
         if (filterData[index].title.length > 50){
           return(
             <div key={index}>
